@@ -1,10 +1,33 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="26.2.8">
-  <diagram name="Page-1" id="P_pVs2A4rZnv7J4XRTEW">
-    <mxGraphModel>
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-      </root>
-    </mxGraphModel>
-  </diagram>
-</mxfile>
+<mxGraphModel>
+  <root>
+    <!-- ATORES -->
+    <mxCell id="actor_admin" value="Administrador" style="actor" vertex="1" parent="1">
+      <mxGeometry x="100" y="200" width="40" height="60" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="actor_paciente" value="Paciente" style="actor" vertex="1" parent="1">
+      <mxGeometry x="300" y="200" width="40" height="60" as="geometry"/>
+    </mxCell>
+    
+    <mxCell id="actor_profissional" value="Profissional" style="actor" vertex="1" parent="1">
+      <mxGeometry x="500" y="200" width="40" height="60" as="geometry"/>
+    </mxCell>
+
+    <!-- CASOS DE USO (ADMIN) -->
+    <mxCell id="uc1" value="Cadastrar Médico" style="usecase" vertex="1" parent="1">
+      <mxGeometry x="50" y="100" width="120" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge1" source="actor_admin" target="uc1" style="arrow" edge="1" parent="1"/>
+
+    <!-- CASOS DE USO (PACIENTE) -->
+    <mxCell id="uc2" value="Agendar Consulta" style="usecase" vertex="1" parent="1">
+      <mxGeometry x="250" y="100" width="120" height="40" as="geometry"/>
+    </mxCell>
+    <mxCell id="edge2" source="actor_paciente" target="uc2" style="arrow" edge="1" parent="1"/>
+
+    <!-- RELAÇÕES -->
+    <mxCell id="rel1" value="«include»" style="text" vertex="1" parent="1">
+      <mxGeometry x="350" y="150" width="60" height="30" as="geometry"/>
+    </mxCell>
+  </root>
+</mxGraphModel>
